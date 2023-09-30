@@ -1,0 +1,135 @@
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el contenedor principal */
+#body_mainDiv_opciones {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/* Estilos para el título */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el selector */
+#body_main_select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Centrar los divs horizontalmente */
+#body_mainDiv_opciones,
+divInputs,
+#div_btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el grupo de entrada */
+#div_IB {
+  display: flex;
+  width: 98.5%;
+  height: 100%;
+}
+/* Estilos para el botón Limpiar (responsivo) */
+#btn_verificar {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 5%; /* Ajusta el padding para que sea responsivo */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: auto; /* Ancho automático para ocupar el contenido */
+  max-width: none; /* Elimina el límite de ancho máximo */
+  margin: 10px 5px; /* Añade un margen entre los botones */
+
+}
+
+/* Estilos para el botón Limpiar en el grupo de entrada */
+#btn_limpiar {
+  margin: 0px 5px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: auto;
+  max-width: none;
+  height: 60px; /* Igualar el tamaño de altura al del inputER */
+}
+
+/* Estilos para el inputER en el grupo de entrada */
+#inputER {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+  min-height: 40px;
+}
+
+/* Estilos para los inputs (input de texto más ancho) */
+input {
+  /*width: 95%;  Ocupa todo el ancho disponible dentro del contenedor */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para el input de cadena (más ancho) */
+#inputCadena {
+  width: 97%; /* Ocupa todo el ancho disponible dentro del contenedor */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  resize: vertical;
+  min-height: 40px;
+}
+
+/* Estilos para el párrafo de resultados */
+p {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 600px) {
+  /* Cambios de estilo para pantallas más pequeñas aquí */
+  #body_mainDiv_opciones {
+    padding: 10px;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
